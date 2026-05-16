@@ -24,6 +24,7 @@ const QualitativeMethodsPage = lazy(() => import('../pages/qualitative-methods/Q
 const Ahp = lazy(() => import('../pages/ahp/Ahp'));
 
 const NotFound = lazy(() => import('../pages/NotFound'));
+const About = lazy(() => import('../pages/About'));
 
 function LoadingFallback(): ReactElement {
   return (
@@ -58,6 +59,8 @@ export default function PublicLayout(): ReactElement {
             <Route path="/quantitative-methods" element={<QuantitativeMethods />} />
             <Route path="/qualitative-methods" element={<QualitativeMethodsPage />} />
             <Route path="/ahp" element={<Ahp />} />
+            <Route path="/about" element={<About />} />
+
 
             <Route path="*" element={<NotFound />} />
           </Routes>
